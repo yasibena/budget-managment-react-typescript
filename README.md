@@ -1,5 +1,3 @@
-# Budget managment
-
 # Budget Management App
 
 This budget management app is a personal practice project developed using **React**, **TypeScript**, and **Material-UI**. It provides users with a comprehensive tool for tracking their finances.
