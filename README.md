@@ -1,6 +1,20 @@
-# Manage your budget easily
+# Budget managment
 
-This budget management app is a personal practice project developed using React, TypeScript, and Material-UI. It allows users to track their finances effectively with a user-friendly interface. One of the key features is local storage integration, which ensures that your financial data is saved and accessible even after closing the browser. This project serves as an opportunity for me to enhance my skills in web development and explore best practices in building responsive applications.
+# Budget Management App
+
+This budget management app is a personal practice project developed using **React**, **TypeScript**, and **Material-UI**. It provides users with a comprehensive tool for tracking their finances.
+
+## Features
+
+- **Dashboard**: View an overview of your financial health at a glance.
+- **Wallet**: Manage and track different accounts and balances.
+- **Budget**: Set and monitor budgets to stay on track with spending.
+- **Goals**: Set financial goals and track your progress towards achieving them.
+- **Analytics Page**: Gain insights into spending habits and trends to make informed financial decisions.
+
+## Local Storage
+
+All financial data is saved using local storage, ensuring that your information is accessible even after closing the browser.
 
 ## Demo
 
