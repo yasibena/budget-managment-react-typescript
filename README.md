@@ -65,25 +65,24 @@ To set up a React project with TypeScript using Vite and Material-UI (MUI), foll
 
 2. Run the following command to create a new Vite project with TypeScript:
 
-
+   ```sh
    npm create vite@latest my-budget-app --template react-ts
-   
-
+   ```
    Replace my-budget-app with your desired project name.
 
 3. Navigate into your project directory:
 
-   
+   ```sh
    cd my-budget-app
-   
+   ```
 
 ▎Step 2: Install dependencies
 
 1. Install the required dependencies for Material-UI:
 
-   
+   ```sh
    npm install @mui/material @emotion/react @emotion/styled
-   
+   ```
 
    • @mui/material: The core Material-UI components.
 
@@ -93,9 +92,9 @@ To set up a React project with TypeScript using Vite and Material-UI (MUI), foll
 
 1. Start the development server to see your app in action:
 
-   
+   ```sh
    npm run dev
-   
+   ```
 
 2. Open your browser and navigate to http://localhost:5173 (or the port indicated in your terminal) to view your application.
 
