@@ -46,18 +46,6 @@ All financial data is saved using local storage, ensuring that your information 
 
 
 
-## Features
-
-- User-friendly shopping interface
-- Product listings with detailed views
-- Filter products by color, price range, size, and availability
-- Shopping cart functionality
-- User authentication and account management
-- Responsive design with TailwindCSS
-- State management using Redux
-- Backend services and authentication handled by Supabase
-- Skeleton loader for product loading
-
 ## Getting Started
 
 To get started with this project, follow these steps:
@@ -77,7 +65,7 @@ To set up a React project with TypeScript using Vite and Material-UI (MUI), foll
 
 2. Run the following command to create a new Vite project with TypeScript:
 
-   
+
    npm create vite@latest my-budget-app --template react-ts
    
 
@@ -114,7 +102,7 @@ To set up a React project with TypeScript using Vite and Material-UI (MUI), foll
 ▎Step 4: Set up Material-UI
 
 1. You can now start using Material-UI components in your React app. For example, open src/App.tsx and modify it as follows:
-   
+```js
    import React from 'react';
    import { Button, Container, Typography } from '@mui/material';
 
@@ -132,7 +120,7 @@ To set up a React project with TypeScript using Vite and Material-UI (MUI), foll
    };
 
    export default App;
-   
+   ```
 
 ▎Step 5: Customize your theme (optional)
 
