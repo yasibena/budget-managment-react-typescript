@@ -2,6 +2,18 @@
 
 This budget management app is a personal practice project developed using **React**, **TypeScript**, and **Material-UI**. It provides users with a comprehensive tool for tracking their finances.
 
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Redux Setup](#redux-setup)
+- [TailwindCSS Setup](#tailwindcss-setup)
+- [Supabase Setup](#supabase-setup)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Features
 
 - **Dashboard**: View an overview of your financial health at a glance.
@@ -34,17 +46,7 @@ All financial data is saved using local storage, ensuring that your information 
 ### Analytics page
 ![5](https://github.com/user-attachments/assets/c11ad628-2a80-4240-965b-5372ff6b447a)
 
-## Table of Contents
 
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Redux Setup](#redux-setup)
-- [TailwindCSS Setup](#tailwindcss-setup)
-- [Supabase Setup](#supabase-setup)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
