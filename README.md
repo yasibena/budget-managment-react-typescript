@@ -7,10 +7,6 @@ This budget management app is a personal practice project developed using **Reac
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
-- [Usage and Setup](#usage-and-setup)
-- [Supabase Setup](#supabase-setup)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -55,7 +51,7 @@ To get started with this project, follow these steps:
 - Node.js (v14 or later)
 - npm or yarn
 
-### Installation
+## Installation
 
 To set up a React project with TypeScript using Vite and Material-UI (MUI), follow these steps:
 
