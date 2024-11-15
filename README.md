@@ -7,9 +7,7 @@ This budget management app is a personal practice project developed using **Reac
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Redux Setup](#redux-setup)
-- [TailwindCSS Setup](#tailwindcss-setup)
+- [Usage and Setup](#usage-and-setup)
 - [Supabase Setup](#supabase-setup)
 - [Contributing](#contributing)
 - [License](#license)
@@ -71,94 +69,113 @@ To get started with this project, follow these steps:
 
 ### Installation
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yasibena/redux-react-ecommerce.git
-   cd ecommerce
+To set up a React project with TypeScript using Vite and Material-UI (MUI), follow these steps:
 
-### Usage
-1. Start project
-   ```sh
-   npm install
-   or
-   yarn install
+▎Step 1: Create a new Vite project
 
-### Redux Setup
+1. Open your terminal.
 
-Our Redux setup is organized into a `redux` folder. Within this folder, you'll find `store.js` which sets up the Redux store. Additionally, there is a `feature` folder that contains different slices for handling various parts of the state.
+2. Run the following command to create a new Vite project with TypeScript:
 
-#### Store Configuration
+   
+   npm create vite@latest my-budget-app --template react-ts
+   
 
-The `store.js` file is responsible for configuring the Redux store. Here’s a snippet of how it’s set up:
+   Replace my-budget-app with your desired project name.
 
-```js
-import { configureStore } from "@reduxjs/toolkit";
-import productReducer from './feature/ProductSlice';
-import modalReducer from "./feature/modalSlice";
-import { apiSlice } from "./feature/apiSlice";
-import cartSlice from "./feature/cartSlice";
-import authReducer from './feature/authSlice';
+3. Navigate into your project directory:
 
-export const store = configureStore({
-  reducer: {
-    products: productReducer,
-    modal: modalReducer,
-    auth: authReducer,
-    cart: cartSlice,
-    [apiSlice.reducerPath]: apiSlice.reducer,
-  },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(apiSlice.middleware)
-});
-```
+   
+   cd my-budget-app
+   
 
-Inside the redux folder, there is a feature folder that contains the following slices:
+▎Step 2: Install dependencies
 
-*   ProductSlice.js: Manages the state related to products.
-*   ModalSlice.js: Manages the state related to modal visibility and interactions.
-*   apiSlice.js: Handles API calls and state management related to data fetching.
-*   cartSlice.js: Manages the state of the shopping cart.
-*   authSlice.js: Manages user authentication and related state.
-    
-By organizing our Redux state management this way, we keep our code modular and easier to maintain.
+1. Install the required dependencies for Material-UI:
 
-### TailwindCSS Setup
-TailwindCSS is already set up. You can start using it by adding classes to your components. For example:
+   
+   npm install @mui/material @emotion/react @emotion/styled
+   
 
-```js
-function ProductCard({ product }) {
-  return (
-    <div className="p-4 m-4 bg-white shadow-lg rounded-lg">
-      <h2 className="text-xl font-bold">{product.name}</h2>
-      <p className="text-gray-700">{product.description}</p>
-      <p className="text-green-500">${product.price}</p>
-    </div>
-  );
-}
-```
+   • @mui/material: The core Material-UI components.
 
-### Supabase Setup 
-Make sure to configure Supabase for backend services and authentication. You can sign up for a free account and create a new project at Supabase.
-1. Install Supabase dependencies:
-  ```sh
-npm install @supabase/supabase-js
-# or
-yarn add @supabase/supabase-js
-```
-  ```sh
-npm run dev
-```
-this start project on http://localhost:5173/
+   • @emotion/react and @emotion/styled: Required for styling with Material-UI.
 
-2. Initialize Supabase in your project:
+▎Step 3: Start the development server
 
-```js
-import { createClient } from '@supabase/supabase-js';
+1. Start the development server to see your app in action:
 
-const supabaseUrl = 'https://your-supabase-url.supabase.co';
-const supabaseKey = 'your-anon-key';
-export const supabase = createClient(supabaseUrl, supabaseKey);
-```
-3. Use Supabase for authentication and backend services throughout your app.
+   
+   npm run dev
+   
 
+2. Open your browser and navigate to http://localhost:5173 (or the port indicated in your terminal) to view your application.
 
+▎Step 4: Set up Material-UI
+
+1. You can now start using Material-UI components in your React app. For example, open src/App.tsx and modify it as follows:
+   
+   import React from 'react';
+   import { Button, Container, Typography } from '@mui/material';
+
+   const App: React.FC = () => {
+     return (
+       <Container>
+         <Typography variant="h4" component="h1" gutterBottom>
+           Budget Management App
+         </Typography>
+         <Button variant="contained" color="primary">
+           Add Expense
+         </Button>
+       </Container>
+     );
+   };
+
+   export default App;
+   
+
+▎Step 5: Customize your theme (optional)
+
+If you want to customize the Material-UI theme, you can do so by wrapping your application with a ThemeProvider. Here’s how to set it up:
+
+1. Create a new file called theme.ts in the src directory:
+
+   
+   // src/theme.ts
+   import { createTheme } from '@mui/material/styles';
+
+   const theme = createTheme({
+     palette: {
+       primary: {
+         main: '#1976d2',
+       },
+       secondary: {
+         main: '#dc004e',
+       },
+     },
+   });
+
+   export default theme;
+   
+
+2. Update src/main.tsx to include the ThemeProvider:
+
+   
+   import React from 'react';
+   import ReactDOM from 'react-dom/client';
+   import App from './App';
+   import { ThemeProvider } from '@mui/material/styles';
+   import theme from './theme';
+
+   ReactDOM.createRoot(document.getElementById('root')!).render(
+     <React.StrictMode>
+       <ThemeProvider theme={theme}>
+         <App />
+       </ThemeProvider>
+     </React.StrictMode>,
+   );
+   
+
+▎Conclusion
+
+You now have a React application set up with TypeScript using Vite and Material-UI. You can start building your budget management app by adding more components and functionality as needed! If you need further assistance or have specific features in mind, feel free to ask!
