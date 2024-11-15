@@ -1,4 +1,4 @@
-# Budget Management App
+![2](https://github.com/user-attachments/assets/07b5aa91-f03d-48f1-bdd2-2fe80d4ba152)# Budget Management App
 
 This budget management app is a personal practice project developed using **React**, **TypeScript**, and **Material-UI**. It provides users with a comprehensive tool for tracking their finances.
 
@@ -16,11 +16,21 @@ All financial data is saved using local storage, ensuring that your information 
 
 ## Demo
 
-### Home page
+### Sign in page
+![sign in](https://github.com/user-attachments/assets/135c1c04-ea44-48e5-a14f-e757d89f7cd0)
 
+### Dashboard page
 
-### Shop page
+### Wallet page
+![2](https://github.com/user-attachments/assets/2d3909d2-ae27-40ca-ac51-12f8cc720c2d)
 
+### Budget page
+
+### Goal page
+![4](https://github.com/user-attachments/assets/976dea3b-062a-4b15-8695-009d23c43dc4)
+
+### Analytics page
+![5](https://github.com/user-attachments/assets/c11ad628-2a80-4240-965b-5372ff6b447a)
 
 ## Table of Contents
 
