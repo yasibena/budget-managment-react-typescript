@@ -128,7 +128,7 @@ If you want to customize the Material-UI theme, you can do so by wrapping your a
 
 1. Create a new file called theme.ts in the src directory:
 
-   
+   ```js
    // src/theme.ts
    import { createTheme } from '@mui/material/styles';
 
@@ -144,11 +144,11 @@ If you want to customize the Material-UI theme, you can do so by wrapping your a
    });
 
    export default theme;
-   
+   ```
 
 2. Update src/main.tsx to include the ThemeProvider:
 
-   
+```js
    import React from 'react';
    import ReactDOM from 'react-dom/client';
    import App from './App';
@@ -162,7 +162,7 @@ If you want to customize the Material-UI theme, you can do so by wrapping your a
        </ThemeProvider>
      </React.StrictMode>,
    );
-   
+  ``` 
 
 ▎Conclusion
 
